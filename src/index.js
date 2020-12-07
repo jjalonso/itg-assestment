@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import {Grommet, grommet } from 'grommet';
+import GlobalStyle from './components/GlobalStyle';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Grommet theme={grommet}>
+      <GlobalStyle />
+      <App />
+    </Grommet>
   </React.StrictMode>,
   document.getElementById('root')
 );
